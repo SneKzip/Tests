@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конфигуратор</title>
+    <link rel="stylesheet" href="./styles/configurator.css">
+    <link rel="stylesheet" href="./styles/card.css">
+</head>
+<body>
+    <main class="main">
+        <section class="select-answer">
+            <button data-name = "radio" class = "button-answer">
+                <img class = "button-answer__img" src="./images/radio.svg" alt=""><span class = "button-answer__text">Один из нескольких</span>
+            </button>
+            <button data-name = "radio" class = "button-answer">
+                <img class = "button-answer__img" src="./images/checkbox.svg" alt=""><span class = "button-answer__text">Несколько возможных</span>
+            </button>
+            <button data-name = "radio" class = "button-answer">
+                <img class = "button-answer__img" src="./images/vote.png" alt=""><span class = "button-answer__text">Да или нет</span>
+            </button>
+        </section>
+        <section class="content">
+            <section class = "content-main"></section>
+            <p class = "content__text">Поле с вопросами на данный момент пустое. Выберите тип вопроса слева, чтобы начать, либо нажмите на кнопку ниже.</p>
+            <button class = "content__button">Добавить вопрос</button>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src = "./scripts/configurator.js"></script>
+</body>
+</html>
